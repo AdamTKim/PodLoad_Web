@@ -1,0 +1,48 @@
+﻿h4, h4:visited {
+    text-decoration: none;
+    position: relative;
+    color: #f8f9fa;
+}
+
+h4:after, h4:visited:after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    background: #f8f9fa;
+    transition: 0.2s;
+}
+
+h4:hover:after, h4:visited:hover:after {
+    width: 100%;
+}
+
+h4.block, h4:visited.block {
+    display: block;
+    padding: 0.5em;
+}
+
+h4.block:hover, h4:visited.block:hover {
+    background: #f8f9fa;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #80CEE1;
+}
+
+.container-fluid {
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.hide {
+    display: none;
+    padding-top:3px; 
+    padding-left:10px;
+}
+
+.hideHover:hover + .hide {
+    display: block;
+}
